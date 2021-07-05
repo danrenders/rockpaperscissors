@@ -48,6 +48,10 @@ function playRound (playerSelection, computerSelection) {
     }
 };
 
+while (playerScore < 5 || computerScore < 5) {
+    playerSelection = prompt("Rock, Paper or Scissors?");
+    playRound(playerSelection, computerSelection);
+}
 
 function game() {
 
