@@ -55,15 +55,11 @@ while (playerScore < 5 && computerScore < 5) {
     computerSelection = computerPlay().toLowerCase();
     playerSelection = prompt("Rock, Paper or Scissors?").toLowerCase();
     console.log(playRound(playerSelection, computerSelection));
+    if (playerScore === 5) {
+        console.log("Congrats, you win!");
+    } else if (computerScore === 5 ) {
+        console.log("You lose, try again.");
+    } 
 }
 
-function game() {
-    if (playerScore = 5) {
-        console.log("Congrats, you win!");
-    } else if (computerScore = 5 ) {
-        console.log("You lose, try again.");
-    } else {
-        console.log("First to 5 wins!");
-    }
-};
 
