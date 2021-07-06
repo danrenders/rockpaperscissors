@@ -24,44 +24,27 @@ function computerPlay() {
 
 function playRound (playerSelection, computerSelection) {
     if (playerSelection === "paper" && computerSelection === "rock") {
-
         playerScore++; 
         return "You win! Computer chose " + computerSelection + ", and paper covers rock. Player's score: " + playerScore + " Computer's score: " + computerScore;
-
     } else if (playerSelection === "paper" && computerSelection === "scissors") {
-
         computerScore++;
         return "You Lose. Computer chose " + computerSelection + ", and scissors cuts paper. Player's score: " + playerScore + " Computer's score: " + computerScore;
-
     } else if (playerSelection === "rock" && computerSelection === "scissors") {
-
         playerScore++; 
         return "You win! Computer chose " + computerSelection + ", and rock smashes scissors. Player's score: " + playerScore + " Computer's score: " + computerScore;
-
     } else if (playerSelection === "rock" && computerSelection === "paper")  {
-
         computerScore++;
         return "You lose. Computer chose " + computerSelection + ", and paper covers rock. Player's score: " + playerScore + " Computer's score: " + computerScore;
-
     } else if (playerSelection === "scissors" && computerSelection === "paper") {
-
         playerScore++; 
         return "You win! Computer chose " + computerSelection + ", and scissors cuts paper. Player's score: " + playerScore + " Computer's score: " + computerScore;
-
     } else if (playerSelection === "scissors" && computerSelection === "rock") {
-
         computerScore++;
         return "You lose. Computer chose " + computerSelection + ", and rock smashes scissors Player's score: " + playerScore + " Computer's score: " + computerScore;
-
-    } else if (playerSelection === computerSelection) {
-
-        
+    } else if (playerSelection === computerSelection) {  
         return "Computer chose " + computerSelection + ", Therefore it's a Tie. Player's score: " + playerScore + " Computer's score: " + computerScore;
-
     } else {
-
         return "Invalid Choice";
-
     }
 };
 
